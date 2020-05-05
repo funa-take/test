@@ -26,3 +26,8 @@ jobs:
     - name: Run a multi-line script
       run: |
         gcc test.c
+        
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: a.out
